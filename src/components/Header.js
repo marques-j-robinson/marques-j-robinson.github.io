@@ -4,9 +4,12 @@ import styled from 'styled-components';
 import {Container} from './styled/Container.js'
 import Link from './styled/Link.js'
 
+import PdfFile from '../../src/Marques_Robinson_2023.pdf'
+
 const Wrapper = styled(Container)`
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   background-color: #555555;
   border-top: 3px solid #bd2c0f;
 
@@ -15,6 +18,10 @@ const Wrapper = styled(Container)`
     flex-direction: column !important;
   }
 `;
+
+const LeftSide = styled.div`
+    display:flex;
+`
 
 const Name = styled.h1`
   margin-top: auto;
@@ -48,13 +55,25 @@ const Skills = styled.em`
   }
 `;
 
+const Button = styled.p`
+    padding: 0 15px;
+    background-color: lightgrey;
+    color: #bd2c0f;
+    border-radius: 10px;
+`
+
 function Header() {
-  return <Link href="/">
-    <Wrapper>
-        <Name>Marques <Last>Robinson</Last></Name>
-        <Skills>software engineer / musician / painter</Skills>
-    </Wrapper>
-  </Link>;
+  return <Wrapper>
+        <LeftSide>
+            <Link href="/">
+                <Name>Marques <Last>Robinson</Last></Name>
+            </Link>
+            <Skills>software engineer / musician / painter</Skills>
+        </LeftSide>
+        <Link href={PdfFile} target='_blank'>
+            <Button>Resume</Button>
+        </Link>
+    </Wrapper>;
 }
 
 export default Header;

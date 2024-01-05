@@ -38,6 +38,17 @@ module.exports = {
           loader: "url-loader?name=src/images/[name].[ext]",
         },
       },
+        {
+            test: /\.(pdf)$/,
+            use: [
+                {
+                    loader: 'file-loader',
+                    options: {
+                        name: '[name].[ext]'
+                    }
+                }
+            ]
+        }
     ],
   },
   plugins: [
