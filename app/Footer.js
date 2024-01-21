@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components';
-import Icon from './styled/Icon.js'
 
 const Wrapper = styled.footer`
     display: flex;
@@ -24,11 +23,6 @@ const Social = styled.ul`
 function Footer() {
   return (
       <Wrapper>
-        <Social>
-            <li><Icon type="GitHub" /></li>
-            <li><Icon type="Medium" /></li>
-            <li><Icon type="LinkedIn" /></li>
-        </Social>
         marques.j.robinson@gmail.com
       </Wrapper>
   );

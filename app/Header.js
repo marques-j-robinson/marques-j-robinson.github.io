@@ -4,8 +4,6 @@ import styled from 'styled-components';
 import {Container} from './styled/Container.js'
 import Link from './styled/Link.js'
 
-import PdfFile from '../../src/Marques_Robinson_2023.pdf'
-
 const Wrapper = styled(Container)`
   display: flex;
   flex-direction: row;
@@ -70,9 +68,6 @@ function Header() {
             </Link>
             <Skills>software engineer / musician / painter</Skills>
         </LeftSide>
-        <Link href={PdfFile} target='_blank'>
-            <Button>Resume</Button>
-        </Link>
     </Wrapper>;
 }
 

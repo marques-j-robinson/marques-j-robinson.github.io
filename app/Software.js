@@ -1,13 +1,11 @@
 import React from 'react';
+import Image from 'next/image';
 import styled from 'styled-components';
 
-import ContentSection from '../components/styled/ContentSection.js'
-import srcProfilePic from 'images/profile.jpeg'
+import ContentSection from './styled/ContentSection.js'
 
-const ProfilePic = styled.img`
+const ProfilePic = styled(Image)`
     border-radius: 50%;
-    width: 250px;
-    height: 250px;
 `
 
 const Wrapper = styled.div`
@@ -45,7 +43,7 @@ const Software = () => {
   return <>
     <ContentSection title="About" subtitle="Introduction">
         <Wrapper>
-          <ProfilePic src={srcProfilePic} alt="Profile Picture" />
+          <ProfilePic src='/profile.jpeg' width={250} height={250} alt="Profile Picture" />
           <Bio>
             <p>I am a web developer, self-taught. Always learning something new. Comfortable collaborating both within and outside of an engineering team. Currently diving into Python/Django to develop solutions for the back-end and power my personal sites.</p>
             <Hobbies>
