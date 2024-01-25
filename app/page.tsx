@@ -50,9 +50,39 @@ export default function Page() {
     </main>
     <footer>
         <ul className="social-media-list">
-            <li>github</li>
-            <li>medium</li>
-            <li>linkedin</li>
+            <li>
+                <a target="_blank" href="https://github.com/marques-j-robinson">
+                    <Image
+                        alt="GitHub Icon"
+                        src="/icons/github.svg"
+                        className="icon-github"
+                        width={25}
+                        height={25}
+                        />
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="https://medium.com/@marques-robinson-project">
+                    <Image
+                        alt="Medium Icon"
+                        src="/icons/medium.svg"
+                        className="icon-medium"
+                        width={25}
+                        height={25}
+                        />
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.linkedin.com/in/marques-j-robinson/">
+                    <Image
+                        alt="LinkedIn Icon"
+                        src="/icons/linkedin.svg"
+                        className="icon-linkedin"
+                        width={25}
+                        height={25}
+                        />
+                </a>
+            </li>
         </ul>
         <p className="email">marques.j.robinson@gmail.com</p>
     </footer>

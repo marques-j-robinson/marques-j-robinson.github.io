@@ -23,6 +23,20 @@ p {
     margin: 0;
 }
 
+/* Icon Colors
+--------------------------------------------------------------------------------*/
+.icon-github {
+    filter: invert(3%) sepia(20%) saturate(140%) hue-rotate(314deg) brightness(94%) contrast(87%);
+}
+
+.icon-medium {
+    filter: invert(0%) sepia(100%) saturate(7447%) hue-rotate(246deg) brightness(108%) contrast(112%);
+}
+
+.icon-linkedin {
+    filter: invert(25%) sepia(99%) saturate(1557%) hue-rotate(195deg) brightness(95%) contrast(93%);
+}
+
 /* Sticky Footer
 --------------------------------------------------------------------------------*/
 
