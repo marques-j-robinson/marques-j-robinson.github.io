@@ -15,7 +15,7 @@ export default function Page() {
             <p className="section-title">About</p>
             <p className="section-description">Introduction</p>
             <div className="section-content intro-section">
-                <Image className="profile-pic" src='/profile.jpeg' width={250} height={250} alt="Profile Picture" />
+                <Image className="profile-pic" src={`${process.env.BASE_PATH||''}/profile.jpeg`} width={250} height={250} alt="Profile Picture" />
                 <div className="hobbies">
                     <p>I am a web developer, self-taught. Always learning something new. Comfortable collaborating both within and outside of an engineering team. Currently diving into Python/Django to develop solutions for the back-end and power my personal sites.</p>
                     <h3 className="hobbies-title">Hobbies</h3>
