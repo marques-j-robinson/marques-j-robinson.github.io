@@ -1,20 +1,175 @@
 /* Google Fonts
 --------------------------------------------------------------------------------*/
+
 @import url(https://fonts.googleapis.com/css?family=Manrope);
 
 /* Global
 --------------------------------------------------------------------------------*/
 
 body {
-  background-color: #F5F5F5;
-  margin: 0;
-  padding: 0;
-  font-family: 'Manrope';
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    background-color: #F5F5F5;
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+p {
+    margin: 0;
+}
+
+/* Sticky Footer
+--------------------------------------------------------------------------------*/
+
+.Site {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.Site-content {
+    flex: 1;
+}
+
+/* Containers
+--------------------------------------------------------------------------------*/
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (min-width: 576px) {
+      max-width: 540px;
+    }
+
+    @media (min-width: 768px) {
+      max-width: 720px;
+    }
+
+    @media (min-width: 992px) {
+      max-width: 960px;
+    }
+
+    @media (min-width: 1200px) {
+      max-width: 1140px;
+    }
+}
+
+/* Header
+--------------------------------------------------------------------------------*/
+
+header {
+    background-color: #555555;
+    border-top: 3px solid #bd2c0f;
+    display: flex;
+    flex-direction: row;
+    padding: 0 15px;
+}
+
+.logo {
+    font-size: 28px;
+    color: #ffffff;
+    padding: 12px 0;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
+.logo-secondary {
+    color: #e3a857;
+}
+
+.logo-description {
+    font-style: italic;
+    color: rgb(255, 255, 255);
+    margin-top: auto;
+    padding: 0px 0px 12px 16px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Section
+--------------------------------------------------------------------------------*/
+
+.section-title {
+    border-left: 3px solid rgb(138, 51, 36);
+    padding-left: 15px;
+    margin: 18px 0px 0px;
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.section-description {
+    font-size: 22px;
+    font-style: italic;
+    padding: 0px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.section-content {
+    margin: 18px 0px;
+}
+
+.section-content p {
+    margin: 16px 0;
+}
+
+/* Intro
+--------------------------------------------------------------------------------*/
+.intro-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-pic {
+    border-radius: 50%;
+}
+
+.hobbies {
+    width: 50%;
+}
+
+.hobbies p {
+    margin: 0px;
+}
+
+.hobbies-title {
+    margin-bottom: 0;
+}
+
+.hobbies-list {
+    margin: 0;
+    padding-left: 15px;
+}
+
+/* Footer
+--------------------------------------------------------------------------------*/
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    flex-shrink: 0;
+    margin-bottom: 1rem;
+}
+
+.social-media-list {
+    padding: 0;
+    list-style-type: none;
+}
+
+.social-media-list li {
+    display: inline-block;
+    margin: 0px 5px;
 }
