@@ -29,6 +29,11 @@ p {
 
 /* Icon Colors
 --------------------------------------------------------------------------------*/
+[class^='icon'] {
+    width: 25px;
+    height: 25px;
+}
+
 .icon-github {
     filter: invert(3%) sepia(20%) saturate(140%) hue-rotate(314deg) brightness(94%) contrast(87%);
 }
@@ -170,6 +175,8 @@ header {
 }
 
 .profile-pic {
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
 }
 
